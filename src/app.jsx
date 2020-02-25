@@ -1,10 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/redux'
-
-import Index from './pages/index'
-
+import 'taro-ui/dist/style/index.scss';
 import configStore from './store'
-
 import './app.css'
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -13,23 +10,54 @@ import './app.css'
 //   require('nerv-devtools')
 // }
 
-const store = configStore()
+const store = configStore();
 
 class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/info/index',
+      'pages/estimate/index',
+      'pages/mine/index'
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
-    }
-  }
+    },
+    tabBar: {
+      color: "#514d58",
+      selectedColor: "#55525d",
+      backgroundColor: "#FFFFFF",
+      borderStyle: 'black',
+      list: [{
+        pagePath: 'pages/index/index',
+        iconPath: "./assets/images/1.png",
+        selectedIconPath: "./assets/images/11.png",
+        text: "首页"
+      }, {
+        pagePath: "pages/info/index",
+        iconPath: "./assets/images/2.png",
+        selectedIconPath: "./assets/images/22.png",
+        text: "消息"
+      }, {
+        pagePath: "pages/estimate/index",
+        iconPath: "./assets/images/3.png",
+        selectedIconPath: "./assets/images/33.png",
+        text: "学评教"
+      }, {
+        pagePath: "pages/mine/index",
+        iconPath: "./assets/images/4.png",
+        selectedIconPath: "./assets/images/44.png",
+        text: "我的"
+      }]
+    },
+  };
 
-  componentDidMount () {}
+  componentDidMount () {
+  }
 
   componentDidShow () {}
 
