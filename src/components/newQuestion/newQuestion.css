@@ -1,0 +1,14 @@
+.new-question-container {
+  width: 100vw;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .new-question-container .title, .new-question-container .info {
+    border-bottom: 1PX solid #CDCDCD;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=newQuestion.css.map */

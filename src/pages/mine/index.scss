@@ -1,0 +1,33 @@
+.avatarWrap {
+  width: 100%;
+  padding: 10% 0;
+  background: #FCE7AB;
+  background-size: 100% 100%;
+  position: relative;
+  box-shadow: 0 0 50px #FCE7AB;
+  margin-bottom: 30px;
+}
+.avatar{
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.mine_wrap{
+  position: relative;
+}
+.mine_btn{
+  position: absolute;
+  width: calc(100% - 20px);
+  bottom: 0;
+}
+
+

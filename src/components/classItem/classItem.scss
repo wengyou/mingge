@@ -1,0 +1,26 @@
+.classItem-container{
+  width: 95vw;
+  height: 5rem;
+  margin: 1rem auto;
+  background: #F8CE5E;
+  font-size: 12PX;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .title{
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    font-size: 18PX;
+    color: #ffffff;
+    line-height: 2rem;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    color: #ffffff;
+  }
+}

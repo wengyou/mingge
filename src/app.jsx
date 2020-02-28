@@ -1,9 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/redux'
-import 'taro-ui/dist/style/index.scss';
 import configStore from './store'
-import './app.css'
-
+import './app.scss'
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
 // if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
@@ -16,10 +14,17 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/estimate/index',
+      'pages/mine/index',
       'pages/index/index',
       'pages/info/index',
-      'pages/estimate/index',
-      'pages/mine/index'
+      'pages/editProfile/index',
+      'pages/classDetail/classDetail',
+      'pages/previewData/previewData',
+      'pages/previewTest/previewTest',
+      'pages/askQuestion/askQuestion',
+      'pages/taskUp/taskUp',
+      'pages/grade/grade',
     ],
     window: {
       backgroundTextStyle: 'light',

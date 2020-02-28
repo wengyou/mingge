@@ -1,0 +1,28 @@
+.pptItem-container {
+  width: 100%;
+  height: 8rem;
+  background: #CDCDCD;
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5rem; }
+  .pptItem-container .content {
+    width: 6rem;
+    height: 6rem;
+    background: #F8CE5E;
+    margin: auto 0; }
+  .pptItem-container .wrapper {
+    width: 16rem;
+    height: 70%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column; }
+    .pptItem-container .wrapper .title {
+      font-size: 18PX;
+      text-align: center;
+      line-height: 3rem; }
+    .pptItem-container .wrapper .time {
+      font-size: 14PX;
+      text-align: center;
+      line-height: 2rem; }
+
+/*# sourceMappingURL=pptItem.css.map */

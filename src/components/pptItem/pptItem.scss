@@ -1,0 +1,31 @@
+.pptItem-container{
+  width: 100%;
+  height: 8rem;
+  background: #CDCDCD;
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5rem;
+  .content{
+    width: 6rem;
+    height: 6rem;
+    background: #F8CE5E;
+    margin: auto 0;
+  }
+  .wrapper{
+    width: 16rem;
+    height: 70%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    .title{
+      font-size: 18PX;
+      text-align: center;
+      line-height: 3rem;
+    }
+    .time{
+      font-size: 14PX;
+      text-align: center;
+      line-height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.previewTest-container{
+  .test-item-wrapper{
+    display: flex;
+    flex-direction: column;
+    .test-item{
+      width: 100vw;
+      height: 3rem;
+      border-bottom: 1PX solid #CDCDCD;
+      border-top: 1PX solid #CDCDCD;
+      text-align: center;
+      line-height: 3rem;
+      margin-top: 1rem;
+    }
+  }
+  .test-detail-wrapper{
+    display: flex;
+    flex-direction: column;
+    .title{
+      width: 100vw;
+      height: 3rem;
+      line-height: 3rem;
+      border-bottom: 1PX solid #CDCDCD;
+      display: flex;
+      justify-content: space-around;
+      .cancel{
+        font-size: 12PX;
+        color: #CDCDCD;
+        padding-left: 3rem;
+      }
+    }
+  }
+}

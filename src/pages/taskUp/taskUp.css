@@ -1,0 +1,47 @@
+.taskUp-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .taskUp-container .wrapper {
+    display: grid;
+    grid-template-rows: 2rem 2rem 2rem 2rem 2rem;
+    grid-template-columns: 30% 70%;
+    border-top: 1px solid #CDCDCD;
+    text-align: left;
+    line-height: 2rem; }
+    .taskUp-container .wrapper .item, .taskUp-container .wrapper .item-input {
+      border-bottom: 1PX solid #CDCDCD; }
+    .taskUp-container .wrapper .item {
+      border-right: 1PX solid #CDCDCD; }
+  .taskUp-container .title {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem; }
+  .taskUp-container .answer-wrapper {
+    width: 100%;
+    border-top: 1PX solid #CDCDCD;
+    border-bottom: 1PX solid #CDCDCD; }
+    .taskUp-container .answer-wrapper .answer {
+      width: 100%;
+      height: 2rem;
+      text-align: left;
+      line-height: 2rem; }
+    .taskUp-container .answer-wrapper .text {
+      width: 100%;
+      height: 6rem; }
+  .taskUp-container .btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem; }
+    .taskUp-container .btn-wrapper .btn {
+      width: 5rem;
+      height: 2rem;
+      background: #F8CE5E;
+      text-align: center;
+      line-height: 2rem;
+      border: none;
+      font-size: 14PX;
+      color: white; }
+
+/*# sourceMappingURL=taskUp.css.map */
