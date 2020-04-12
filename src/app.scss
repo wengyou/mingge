@@ -83,6 +83,10 @@ page{
   height: 100%;
 }
 
+.full_width{
+  width: 100%;
+}
+
 .grayFilter{
   filter: grayscale(100%);
 }
@@ -280,6 +284,7 @@ page{
 .at-tab-bar__item--active {
   color: #F8CE5E;
 }
+
 .at-tabs__item--active {
   color: #F8CE5E;
 }

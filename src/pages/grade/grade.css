@@ -76,4 +76,25 @@
       .preview-test-container .wrapper2 .item .item-score {
         flex: 1; }
 
+.rank-container {
+  width: 100%;
+  height: 5rem;
+  background: #F8CE5E;
+  margin-top: 1rem;
+  display: flex; }
+  .rank-container .img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: auto 1rem; }
+  .rank-container .name {
+    font-size: 14PX;
+    font-weight: bold;
+    line-height: 5rem; }
+  .rank-container .score {
+    line-height: 5rem;
+    font-size: 14PX;
+    color: white;
+    margin-left: 40vw; }
+
 /*# sourceMappingURL=grade.css.map */

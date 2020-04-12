@@ -1,4 +1,4 @@
-import Taro, { useEffect, useState } from '@tarojs/taro';
+import Taro, { useEffect } from '@tarojs/taro';
 import { View } from "@tarojs/components";
 import { AtTag } from 'taro-ui';
 import { connect } from "@tarojs/redux";
@@ -7,20 +7,23 @@ import './index.scss';
 import {showLoading} from "../../util/common";
 
 const Estimate = props => {
-  const { commentDetail, dispatchCommentDetail  } = props;
-  const list = Object.keys(commentDetail);
+  const { commentDetail, dispatchCommentDetail, courseId  } = props;
 
   useEffect(()=>{
     showLoading(true);
-    dispatchCommentDetail({courseId: 1})
+    dispatchCommentDetail({courseId})
   }, []);
 
   return (
     <View className='full_height flex direction_column'>
       <View className='flex padding_column_m around flex_grow'>
         {
-          list.map(key => (
-            <View className='flex direction_column center_column' >
+          Array.isArray(Object.keys(commentDetail)) &&
+          Object.keys(commentDetail).map(key => (
+            <View
+              className='flex direction_column center_column'
+              key={key}
+            >
               <AtTag
                 name={key}
                 className='bgc_lightorange fontC_white'
@@ -29,7 +32,12 @@ const Estimate = props => {
               </AtTag>
               {
                 commentDetail[key].map(e=>(
-                  <View className='padding_column_xs ellipsis'>{e.nickName}</View>
+                  <View
+                    className='padding_column_xs ellipsis'
+                    key={e.nickName}
+                  >
+                    {e.nickName}
+                  </View>
                 ))
               }
             </View>
@@ -38,7 +46,8 @@ const Estimate = props => {
       </View>
       <View className='shadow margin_xxs bgc_white padding_xs flex between flex_end'>
         {
-          list.map(key =>(
+          Array.isArray(Object.keys(commentDetail)) &&
+          Object.keys(commentDetail).map(key =>(
             <View
               className='flex direction_column center'
               key={key}
@@ -63,6 +72,7 @@ const Estimate = props => {
 export default connect(
   state => ({
     commentDetail: state.class2.commentDetail,
+    courseId: state.class1.courseId
   }),
   dispatch => ({
     dispatchCommentDetail(args){

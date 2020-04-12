@@ -51,7 +51,8 @@ const EditProfile = props => {
             className=''
             placeholder='请输入工号/学号'
             value={number}
-            onChange={(e) => (setNumber(e))}
+            onChange={
+              (e) => (setNumber(e))}
           />
         </View>
         <View className='flex center_column padding_xxs'>

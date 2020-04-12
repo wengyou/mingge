@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     .time{
+      color: white;
       width: 4rem;
       height: 80%;
       margin: auto 0;
@@ -20,23 +21,27 @@
     width: 100%;
     height: 25%;
     .time{
-      background: green;
+      background: #ffea93;
     }
     .tab{
       width: 76vw;
-      height: 2.5rem;
+      height: 100%;
       display: flex;
       justify-content: space-between;
-      margin: auto 0;
       .tab-item{
         width: 4.5rem;
-        height: 2.5rem;
-        background: #F8CE5E;
-        font-size: 14PX;
-        color: white;
+        height: 4.5rem;
+        font-size: 13PX;
         text-align: center;
         line-height: 2.5rem;
-        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: auto .5rem;
+        .img{
+          width: 2rem;
+          height: 2rem;
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -44,51 +49,57 @@
     width: 100%;
     height: 40%;
     .time{
-      background: red;
+      background: #f0d965;
     }
     .tab{
       width: 76vw;
-      height: 6rem;
-      background: white;
+      height: 9rem;
       margin: auto 0;
       display: grid;
       grid-template-columns: 4.5rem 4.5rem 4.5rem;
-      grid-template-rows: 2.5rem 2.5rem;
+      grid-template-rows: 4.5rem 4.5rem;
       grid-row-gap: .4rem;
       grid-column-gap: .4rem;
       .tab-item{
-        background: #F8CE5E;
-        font-size: 14PX;
-        color: white;
+        font-size: 13PX;
         line-height: 2.5rem;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        .img{
+          width: 2rem;
+          height: 2rem;
+          margin: 0 auto;
+        }
       }
     }
   }
   .class-after {
     width: 100%;
     height: 25%;
-
     .time {
-      background: green;
+      background: #ffea93;
     }
-
     .tab {
       width: 76vw;
-      height: 2.5rem;
+      height: 100%;
       display: flex;
       justify-content: space-between;
       margin: auto 0;
-
       .tab-item {
         width: 4.5rem;
-        height: 2.5rem;
-        background: #F8CE5E;
-        font-size: 14PX;
-        color: white;
+        height: 4.5rem;
+        font-size: 13PX;
         text-align: center;
+        margin: auto .5rem;
+        display: flex;
+        flex-direction: column;
         line-height: 2.5rem;
-        margin-right: 1rem;
+        .img{
+          width: 2rem;
+          height: 2rem;
+          margin: 0 auto;
+        }
       }
     }
   }

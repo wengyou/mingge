@@ -14,17 +14,20 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/estimate/index',
-      'pages/mine/index',
       'pages/index/index',
       'pages/info/index',
+      'pages/checkScore/index',
+      'pages/taskUp/taskUp',
+      'pages/estimate/index',
+      'pages/mine/index',
       'pages/editProfile/index',
       'pages/classDetail/classDetail',
       'pages/previewData/previewData',
       'pages/previewTest/previewTest',
       'pages/askQuestion/askQuestion',
-      'pages/taskUp/taskUp',
       'pages/grade/grade',
+      'pages/evaluate/evaluate',
+      'pages/return/return'
     ],
     window: {
       backgroundTextStyle: 'light',

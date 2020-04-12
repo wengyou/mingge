@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between; }
     .classDetail-container .class-item .time {
+      color: white;
       width: 4rem;
       height: 80%;
       margin: auto 0;
@@ -18,62 +19,72 @@
     width: 100%;
     height: 25%; }
     .classDetail-container .class-before .time {
-      background: green; }
+      background: #ffea93; }
     .classDetail-container .class-before .tab {
       width: 76vw;
-      height: 2.5rem;
+      height: 100%;
       display: flex;
-      justify-content: space-between;
-      margin: auto 0; }
+      justify-content: space-between; }
       .classDetail-container .class-before .tab .tab-item {
         width: 4.5rem;
-        height: 2.5rem;
-        background: #F8CE5E;
-        font-size: 14PX;
-        color: white;
+        height: 4.5rem;
+        font-size: 13PX;
         text-align: center;
         line-height: 2.5rem;
-        margin-right: 1rem; }
+        display: flex;
+        flex-direction: column;
+        margin: auto .5rem; }
+        .classDetail-container .class-before .tab .tab-item .img {
+          width: 2rem;
+          height: 2rem;
+          margin: 0 auto; }
   .classDetail-container .class-middle {
     width: 100%;
     height: 40%; }
     .classDetail-container .class-middle .time {
-      background: red; }
+      background: #f0d965; }
     .classDetail-container .class-middle .tab {
       width: 76vw;
-      height: 6rem;
-      background: white;
+      height: 9rem;
       margin: auto 0;
       display: grid;
       grid-template-columns: 4.5rem 4.5rem 4.5rem;
-      grid-template-rows: 2.5rem 2.5rem;
+      grid-template-rows: 4.5rem 4.5rem;
       grid-row-gap: .4rem;
       grid-column-gap: .4rem; }
       .classDetail-container .class-middle .tab .tab-item {
-        background: #F8CE5E;
-        font-size: 14PX;
-        color: white;
+        font-size: 13PX;
         line-height: 2.5rem;
-        text-align: center; }
+        text-align: center;
+        display: flex;
+        flex-direction: column; }
+        .classDetail-container .class-middle .tab .tab-item .img {
+          width: 2rem;
+          height: 2rem;
+          margin: 0 auto; }
   .classDetail-container .class-after {
     width: 100%;
     height: 25%; }
     .classDetail-container .class-after .time {
-      background: green; }
+      background: #ffea93; }
     .classDetail-container .class-after .tab {
       width: 76vw;
-      height: 2.5rem;
+      height: 100%;
       display: flex;
       justify-content: space-between;
       margin: auto 0; }
       .classDetail-container .class-after .tab .tab-item {
         width: 4.5rem;
-        height: 2.5rem;
-        background: #F8CE5E;
-        font-size: 14PX;
-        color: white;
+        height: 4.5rem;
+        font-size: 13PX;
         text-align: center;
-        line-height: 2.5rem;
-        margin-right: 1rem; }
+        margin: auto .5rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5rem; }
+        .classDetail-container .class-after .tab .tab-item .img {
+          width: 2rem;
+          height: 2rem;
+          margin: 0 auto; }
 
 /*# sourceMappingURL=classDetail.css.map */

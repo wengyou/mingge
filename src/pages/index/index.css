@@ -4,4 +4,11 @@
   color: #CDCDCD;
   text-align: center; }
 
+.none {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #CDCDCD; }
+
 /*# sourceMappingURL=index.css.map */

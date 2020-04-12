@@ -10,7 +10,7 @@ export default (method, url, payload)=> {
     data: JSON.stringify(payload),
     header: {
       'Content-Type': 'application/json',
-      'token': token || '',
+      'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMSIsImlhdCI6MTU4MzA0MTI1Mywic3ViIjoiUmFjaGVsIiwiZXhwIjoxNTgzNjQ2MDUzfQ.HK5VtW3jdXhFmQHxAUgwc7R9ywTXz9XiStDSQqrSLKI' || '',
     },
     method: method.toUpperCase(),
     timeout: 10000,

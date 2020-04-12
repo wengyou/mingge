@@ -1,0 +1,95 @@
+.evaluate-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .item{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 3rem;
+    .circle{
+      width: 3rem;
+      height: 3rem;
+      background: aqua;
+      font-size: 12PX;
+      border-radius: 50%;
+      margin-left: 2rem;
+      &:hover{
+        background: #F8CE5E;
+      }
+    }
+    .grade1{
+      width: 50vw;
+      height: 3rem;
+      background: #F8CE5E;
+      margin-left: 1rem;
+    }
+    .grade2{
+      width: 40vw;
+      height: 3rem;
+      background: #F8CE5E;
+      margin-left: 1rem;
+    }
+    .grade3{
+      width: 30vw;
+      height: 3rem;
+      background: #F8CE5E;
+      margin-left: 1rem;
+    }
+    .grade4{
+      width: 20vw;
+      height: 3rem;
+      background: #F8CE5E;
+      margin-left: 1rem;
+    }
+    .grade5{
+      width: 10vw;
+      height: 3rem;
+      background: #F8CE5E;
+      margin-left: 1rem;
+    }
+  }
+  .btn{
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 16PX;
+    color: #ffffff;
+    background: #F8CE5E;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-top: 4rem;
+  }
+}
+.comment-container{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  background: #F8CE5E;
+  margin-top: 1rem;
+  .grade{
+    width: 100%;
+    height: 2rem;
+    font-size: 16PX;
+    margin-left: 2rem;
+  }
+  .wrapper{
+    width: 100%;
+    display: flex;
+    height: 3rem;
+    margin-left: 2rem;
+    .img{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+    }
+    .name{
+      line-height: 3rem;
+      margin-left: 2rem;
+      font-size: 14PX;
+      color: white;
+    }
+  }
+}
